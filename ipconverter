@@ -1,0 +1,81 @@
+oct2ip(){
+
+dec=`echo $((8#$1))`;
+
+dec2ip "$dec";
+
+}
+
+hex2ip(){
+
+dec=`echo $((16#$1))`;
+
+dec2ip "$dec";
+
+}
+
+bin2ip(){
+
+dec=`echo $((2#$1))`;
+
+dec2ip "$dec";
+
+}
+
+
+dec2ip(){
+
+printf "\n";
+
+ip=$1;
+
+s="";
+
+for i in {1..4};
+
+ do s='.'$((ip%256))$s && ((ip>>=8));
+
+ done;
+
+ echo ${s:1};
+
+printf "\n";
+
+}
+
+
+ip2all(){
+
+ip=`echo $1`;
+
+dec=`echo $ip | tr . '\n' | awk '{s = s*256 + $1} END{print s}'`;
+
+oct=`echo "obase=8; $dec" | bc`;
+
+hex=`echo "obase=16; $dec" | bc`;
+
+bin=`echo "obase=2; $dec" | bc`;
+
+printf "\n";
+
+echo "IP:           ${ip}"
+
+printf "\n";
+
+echo "HEXADECIMAL:  ${hex}";
+
+printf "\n";
+
+echo "DECIMAL:      ${dec}";
+
+printf "\n";
+
+echo "OCTAL:        0${oct}";
+
+printf "\n";
+
+echo "BINARY:       ${bin}";
+
+printf "\n";
+
+}
