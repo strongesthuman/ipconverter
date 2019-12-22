@@ -3,7 +3,9 @@ Simple functions to add into .bashrc to convert IP address into binary, hexadeci
 
 # Setup
 
-Download the above script and go to the directory where you've downloaded it.
+You can download the file (ipconverter) that has functions directly from above or if you're a linux geek and want to download the file from terminal only, 
+
+<pre><code> wget https://raw.githubusercontent.com/bug-hunter-karna/ipconverter/master/ipconverter </code></pre>
 
 Append the functions from <code>  ipconverter </code> to <code> \~/.bashrc </code>  or <code>\~/.bash_profile</code>
 
@@ -21,19 +23,19 @@ Load the <code>  ~/.bashrc </code>  file
 
 ## Hexadecimal to IP
 
-<pre><code> hex2ip 127.0.0.1 </code></pre>
+<pre><code> hex2ip 7F000001 </code></pre>
 
 ## Decimal to IP
 
-<pre><code> dec2ip 127.0.0.1 </code></pre>
+<pre><code> dec2ip 2130706433 </code></pre>
 
 ## Octal to IP
 
-<pre><code> oct2ip 127.0.0.1 </code></pre>
+<pre><code> oct2ip 017700000001 </code></pre>
 
 ## Binary to IP
 
-<pre><code> bin2ip 127.0.0.1 </code></pre>
+<pre><code> bin2ip 1111111000000000000000000000001 </code></pre>
 
 
 # Screenshot of Usage
