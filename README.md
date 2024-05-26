@@ -50,11 +50,3 @@ Load the <code>  ~/.bashrc </code>  file
 ## Thank you :)
 
 I just wanted to make it easier to convert IP address format rather than going to different websites for conversion. These formats (decimal, octal, hexadecimal etc) can be used to bypass blacklisted IP addresses while trying SSRFs.
-
-Feedbacks are welcome. 
-
-You can contact me on 
-<a href="https://twitter.com/karna__1"> @karna__1 </a>
-
-
-Happy hacking! :) 
